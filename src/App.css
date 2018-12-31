@@ -1,32 +1,72 @@
-.App {
-  text-align: center;
+.pointer {
+	cursor: pointer;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.shape {
+	-moz-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.rotate {
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
 }
 
-.App-link {
-  color: #61dafb;
+.expandable {
+	transition: all 1s ease-in-out;
+
+	padding: 0.5em 0em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.expandableClose {
+	transition: all 1s ease-in-out;
+
+	padding: 0em 0em;
+}
+
+.child {
+	padding: 0.3em;
+	/* background-color: bisque; */
+	/* border-left: 1px solid red;
+	border-bottom: 1px solid red; */
+	/* width: 100%;
+	height: 100%; */
+}
+.row > .conector {
+	background-color: #9da0a9;
+	width: 1px;
+	height: auto;
+}
+
+.conector:after {
+}
+.children {
+	transition: all 1s ease-in-out;
+	max-height: 0px;
+	opacity: 0;
+}
+
+.childrenExpend {
+	transition: all 2s ease-in-out;
+	max-height: 500px;
+	opacity: 1;
+}
+
+.tree {
+	width: 20em;
+	padding: 15px 20px 15px 5px;
+	background-color: #20232d;
+	color: #9da0a9;
+}
+
+.headerBG {
+	background-color: #20232d !important;
+}
+
+.txt1 {
+	color: #9da0a9;
 }
