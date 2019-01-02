@@ -136,7 +136,7 @@ class NodeComponent extends Component {
 							<div className="row">
 								<div className="col-xs-4 ">
 									<TextFieldGroup
-										placeholder="newFolderName"
+										placeholder="New Folder Name"
 										name="newFolderName"
 										type="text"
 										value={this.state.newFolderName}
