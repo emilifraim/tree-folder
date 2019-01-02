@@ -1,3 +1,31 @@
+.tree {
+	padding: 15px 20px 15px 5px;
+	background-color: #20232d;
+	color: #9da0a9;
+	font-size: 20px;
+}
+
+.child {
+	padding: 0.3em;
+}
+.row > .conector {
+	background-color: #9da0a9;
+	width: 1px;
+	height: auto;
+}
+
+.children {
+	transition: all 1s ease-in-out;
+	max-height: 0px;
+	opacity: 0;
+}
+
+.childrenExpend {
+	transition: all 2s ease-in-out;
+	max-height: 500px;
+	opacity: 1;
+}
+
 .pointer {
 	cursor: pointer;
 }
@@ -28,45 +56,28 @@
 	padding: 0em 0em;
 }
 
-.child {
-	padding: 0.3em;
-	/* background-color: bisque; */
-	/* border-left: 1px solid red;
-	border-bottom: 1px solid red; */
-	/* width: 100%;
-	height: 100%; */
-}
-.row > .conector {
-	background-color: #9da0a9;
-	width: 1px;
-	height: auto;
-}
-
-.conector:after {
-}
-.children {
-	transition: all 1s ease-in-out;
-	max-height: 0px;
-	opacity: 0;
-}
-
-.childrenExpend {
-	transition: all 2s ease-in-out;
-	max-height: 500px;
-	opacity: 1;
-}
-
-.tree {
-	width: 20em;
-	padding: 15px 20px 15px 5px;
-	background-color: #20232d;
-	color: #9da0a9;
-}
-
 .headerBG {
 	background-color: #20232d !important;
 }
 
 .txt1 {
 	color: #9da0a9;
+}
+
+.AddFolderPanel {
+	float: left;
+}
+
+.custom-btn {
+	background-color: #20232d;
+	border-style: solid;
+	border-color: #9da0a9;
+	color: #9da0a9;
+}
+
+.custom-btn:hover {
+	background-color: #9da0a9;
+	border-style: solid;
+	border-color: #9da0a9;
+	color: #20232d;
 }

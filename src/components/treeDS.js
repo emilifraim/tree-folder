@@ -63,4 +63,4 @@ class TreeDS {
 	}
 }
 
-export { TreeDS };
+export { TreeDS, Node };
